@@ -24,136 +24,118 @@ Execute the program using runserver command.
 
 # PROGRAM
 ```
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<title>title</title>
+   <body>
+    <img src="logo.png" height="100" width="540">
+      <table border="6" cellspacing="6" cellpadding="6">
+          <caption>MY TIME TABLE</caption>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <center>
-        <img src="aswin/timeapp/static/sec-logo-01as.jpg" height="100" ; width="540">
-    </center>
-    <style>
-        table {
-            border: 3px solid black;
-            width: 80%;
-            height: 100px;
-            border-collapse: collapse;
-            margin: 3px;
-            margin-left: auto;
-            margin-right: auto;
+          <tr>
+            <th bgcolor="sky blue" align="center">day/time</th>
+            <th bgcolor="sky blue" align="center">8:9 am</th>
+            <th bgcolor="sky blue" align="center">9:10 am</th>
+            <th bgcolor="sky blue" align="center">10:11 am</th>
+            <th bgcolor="sky blue" align="center">11:12 am</th>
+            <th bgcolor="sky blue" align="center">12:1 pm</th>
+            <th bgcolor="sky blue" align="center">1:2 pm</th>
+            <th bgcolor="sky blue" align="center">2:3 pm</th>
+            <th bgcolor="sky blue" align="center">3:4 pm</th>
+            <th bgcolor="sky blue" align="center">4:5 pm</th>
+         </tr>
 
-        }
 
-        th,
-        td {
-            border: 5px solid black;
-            padding: 20px;
-            text-align: center;
-        }
+              <tr>
+                <th bgcolor="sky blue" align="center" bgcolor="orange">MONDAY</th>
+                <td colspan="2" align="center" bgcolor="orange">Computer networks</td> 
+                <td colspan="2" align="center" bgcolor="orange">free</td>
+                <td align="center" bgcolor="orange">LUNCH</td>
+                <td colspan="2" align="center" bgcolor="orange">Statistics</td>
+                <th colspan="2" align="center" bgcolor="orange">Reasoning Ability</th>                   
+                </tr>
 
-        tr {
-            background-color: blue;
-        }
+              <tr>
+                <th bgcolor="sky blue" align="center" >TUESDAY</th>
+                <th colspan="2" align="center" bgcolor="orange">free</th>
+	    <th colspan="2" align="center" bgcolor="orange">free</th>
+	    <td align="center" bgcolor="orange">LUNCH</td>
+                <th colspan="2" align="center" bgcolor="orange">Web application</th>
+	    <th colspan="2" align="center" bgcolour="orange">Python</th>
+                </tr>
 
-        tr :nth-child(1) {
-            background-color: red;
-        }
+              <tr>
+                <th bgcolor="sky blue" align="center">WEDNESDAY</th>
+                <td colspan="2" align="center" bgcolor="orange">free</td>
+                <td colspan="2" align="center" bgcolor="orange">Computer networks</td>                    
+                <td align="center" bgcolor="orange">LUNCH</td>
+                <td colspan="2" align="center" bgcolor="orange">Mentor meet</td>                    
+                <th colspan="2" align="center" bgcolor="orange">free</th>                    
+             </tr>
 
-        th {
-            background-color: pink;
-        }
-    </style>
+              <tr>
+                <th bgcolor="sky blue" align="center">THURSDAY</th>
+                <td colspan="2" align="center" bgcolor="orange">Python</td>
+                <td colspan="2" align="center" bgcolor="orange">statistics</td>                    
+                <td align="center" bgcolor="orange">LUNCH</td>
+                <td colspan="2" align="center" bgcolor="orange">python</td>                    
+                <th colspan="2" align="center" bgcolor="orange">free</th>                    
+             </tr>
 
-</head>
+                <tr>
+                <th bgcolor="sky blue" align="center">FRIDAY</th>
+                <th colspan="2" align="center" bgcolor="orange">free</th>                    
+                <th colspan="2" align="center" bgcolor="orange">python</th>
+                <td align="center" bgcolor="orange">LUNCH</td>
+                <td colspan="2" align="center" bgcolor="orange">web application</td>                    
+                <td colspan="2" align="center" bgcolor="orange">free</td>
+                </tr>
 
-<body>
-    <table>
-        <tr>
-            <th>Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-        </tr>
-        <tr>
-            <td>8-10</td>
-            <td colspan="6" ;align="center">Free Slot</td>
-        </tr>
-        <tr>
-            <td>10-12</td>
-            <td>Statistics</td>
-            <td>CN</td>
-            <td>Digital</td>
-            <td>Probability</td>
-            <td>CN</td>
-            <td>Probability</td>
-        </tr>
-        <tr>
-            <td>1-3</td>
-            <td>OS</td>
-            <td>Web</td>
-            <td>Mentor Meet</td>
-            <td>Statistics</td>
-            <td>Web</td>
-            <td>Free Slot</td>
-        </tr>
-        <tr>
-            <td>3-5</td>
-            <td colspan="3" ;align="center">Free Slot</td>
-            <td>OS</td>
-            <td>Digital</td>
-            <td>Free Slot</td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th>S.NO</th>
-            <th>Subject Code</th>
-            <th>Subject Name</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>19CY405</td>
-            <td>Operating System</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>19MA211</td>
-            <td>Statistics and Numerical Methods</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>19MA222</td>
-            <td>Probability and Queueing Models</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>19AI414</td>
-            <td>Fundamentals of Web Application Development</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>19EE404</td>
-            <td>Digital Electronics</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>19CS406</td>
-            <td>Computer Network</td>
-        </tr>
+      </table>
+      <table border="4" cellspacing="4" cellpadding="4">
 
-    </table>
-</body>
+/<caption>SUBJECT AND THEIR RESPECTIVE SUBJECT CODES </caption>
+                 <tr>
+                <th align="center" bgcolor="blue">S.NO</th>
+                <th align="center" bgcolor="blue">Subject Code</th>
+                <th align="center" bgcolor="blue">Subject Name</th>
+                </tr>
 
-</html>
+                 <tr>
+                <td align="center" bgcolor="blue">1.</td>
+                <td align="center" bgcolor="yellow">19AI414</td>
+                <td align="center" bgcolor="gold">Fundamentals Of Web Application Development (web application)</td>
+                </tr>
+
+                 <tr>
+                <th align="center" bgcolor="blue">2.</th>
+                <td align="center" bgcolor="yellow">19AI301</th>
+                <td align="center" bgcolor="gold">Python Programming (python)</th>
+                </tr>
+
+                 <tr>
+                <th align="center" bgcolor="blue">3.</th>
+                <td align="center" bgcolor="yellow">19cs406</th>
+                <td align="center" bgcolor="gold">Computer network </th>
+	    </tr>
+
+	     <tr>
+                <th align="center" bgcolor=" blue">4.</th>
+                <td align="center" bgcolor="yellow">19EY709</th>
+                <td align="center" bgcolor="gold"> Reasoning ability </th>
+                </tr>
+
+                 <tr>
+                <th align="center" bgcolor="blue">5.</th>
+                <td align="center" bgcolor="yellow">19MA211</th>
+                <td align="center" bgcolor="gold">Statistics and numerical methods</th>
+                </tr>
+
+      </table>    
+  </body>
 ```
 # OUTPUT
 
-![Screenshot 2025-04-07 153229](https://github.com/user-attachments/assets/00d562fb-0aa1-413b-be42-dddb17702254)
+![Screenshot 2025-04-25 144743](https://github.com/user-attachments/assets/cca8e687-2658-4084-b051-90acf2dcc84a)
 
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
